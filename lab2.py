@@ -1,10 +1,33 @@
 import time
 import numpy as np
+import glob
 
 ejecucion = time.time()
-
-with open('file.txt') as el_archivo:
-    leyendo_archivo = list(map(int, el_archivo.read().split('\n')))
+global nombre_archivo
+def analisar_archivo():
+    path = "C:/Users/GersonGM/github/lab2par2SH/"
+    leyendo_archivo = open(path+nombre_archivo, "r")
+    datos = leyendo_archivo.read()
+    z = str(datos)
+    s = z
+    letras_minusculas = 0
+    letras_mayusculas = 0
+    digitos = 0
+    espacios = 0
+    others = 0
+    x = len(s)
+    for i in range(0,x,1):
+        if ((ord(s[i]) >= 97) and (ord(s[i]) <= 122)):
+            letras_minusculas=letras_minusculas+1
+        elif ((ord(s[i]) >= 65) and (ord(s[i]) <= 90)):
+            letras_mayusculas+=1
+        elif ((ord(s[i]) >= 48) and (ord(s[i]) <= 57)):
+            digitos+=1
+        elif (ord(s[i])==32):
+            espacios+=1
+        else:
+            others+=1
+    print("letras minusculas: %d \n letras mayusculas: %d \n digitos: %d \n espacios: %d \n others: %d \n" %(letras_minusculas,letras_mayusculas,digitos,espacios,others))
 
 def mi_menu():
  
@@ -30,7 +53,8 @@ while not salir:
     opcion = mi_menu()
  
     if opcion == 1:
-        print ("Opcion 1")
+        nombre_archivo = input ("ingresa el nombre del archivo: ")
+        analisar_archivo()
     elif opcion == 2:
         salir = True
     else:
