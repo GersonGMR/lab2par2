@@ -3,31 +3,42 @@ import numpy as np
 import glob
 
 ejecucion = time.time()
+
 global nombre_archivo
+
 def analisar_archivo():
     path = "C:/Users/GersonGM/github/lab2par2SH/"
     leyendo_archivo = open(path+nombre_archivo, "r")
     datos = leyendo_archivo.read()
-    z = str(datos)
-    s = z
-    letras_minusculas = 0
-    letras_mayusculas = 0
-    digitos = 0
-    espacios = 0
-    others = 0
-    x = len(s)
-    for i in range(0,x,1):
-        if ((ord(s[i]) >= 97) and (ord(s[i]) <= 122)):
+
+    conversion_datos = str(datos)
+    mis_datos = conversion_datos
+
+    separando_palabras = datos.split()
+    cantidad_palabras = len(separando_palabras)
+    cantidad_caracteres = len(mis_datos)
+
+    leyendo_archivo.readline()
+    leyendo_archivo.seek(0)
+    cantidad_lineas = len(leyendo_archivo.readlines())
+
+    leyendo_archivo.close()
+
+    for i in range(0,cantidad_caracteres,1):
+        if ((ord(mis_datos[i]) >= 97) and (ord(mis_datos[i]) <= 122)):
             letras_minusculas=letras_minusculas+1
-        elif ((ord(s[i]) >= 65) and (ord(s[i]) <= 90)):
+        elif ((ord(mis_datos[i]) >= 65) and (ord(mis_datos[i]) <= 90)):
             letras_mayusculas+=1
-        elif ((ord(s[i]) >= 48) and (ord(s[i]) <= 57)):
+        elif ((ord(mis_datos[i]) >= 48) and (ord(mis_datos[i]) <= 57)):
             digitos+=1
-        elif (ord(s[i])==32):
+        elif (ord(mis_datos[i])==32):
             espacios+=1
         else:
             others+=1
-    print("letras minusculas: %d \n letras mayusculas: %d \n digitos: %d \n espacios: %d \n others: %d \n" %(letras_minusculas,letras_mayusculas,digitos,espacios,others))
+    
+    print("Cantidad de palabras: %d \n Cantidad de caracteres: %d \n Cantidad de lineas: %d \n" 
+    %(cantidad_palabras,cantidad_caracteres,cantidad_lineas))
+
 
 def mi_menu():
  
@@ -46,7 +57,7 @@ opcion = 0
  
 while not salir:
  
-    print ("1. Ingresar el nombre del archivo de texto para analizar")
+    print ("1. Ingresar el nombre del archivo con su extension para analizarlo")
     print ("2. Salir")
     print ("Elige una opcion")
  
@@ -60,4 +71,4 @@ while not salir:
     else:
         print ("Introduce un numero entre 1 y 2")
  
-print ("Finalizado")
+print ("Finaliconversion_datosado")
