@@ -70,4 +70,4 @@ while not salir:
     else:
         print ("Introduce un numero entre 1 y 2")
  
-print ("Finaliconversion_datosado")
+print ("Finalizado")
