@@ -25,7 +25,7 @@ def analisar_archivo():
     leyendo_archivo.seek(0)
     cantidad_lineas = len(leyendo_archivo.readlines())
     
-    # Realizando separacion de palabras unicas 
+    # Realizando separacion de las palabras unicas 
     palabras_unicas = set()
     for filas in datos:
         palabras_unicas |= set(filas.split())
