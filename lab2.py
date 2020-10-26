@@ -25,14 +25,14 @@ def analisar_archivo():
     leyendo_archivo.seek(0)
     cantidad_lineas = len(leyendo_archivo.readlines())
     
-    # Realizando separacion de palabras unicas
+    # Realizando separacion de palabras unicas 
     palabras_unicas = set()
     for filas in datos:
         palabras_unicas |= set(filas.split())
 
     contador_palabras_unicas = len(palabras_unicas)    
 
-    # Cerrando el archivo leido anteriormente
+    # Cerrando el archivo de texto
     leyendo_archivo.close()
     
     print("Cantidad de palabras: %d \n Cantidad de caracteres: %d \n Cantidad de lineas: %d \n Cantidad de palabras unicas: %d \n" %(cantidad_palabras,cantidad_caracteres,cantidad_lineas,contador_palabras_unicas))
