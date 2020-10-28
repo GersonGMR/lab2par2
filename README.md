@@ -1,5 +1,5 @@
-# Repositorio laboratorio y parcial dos SE
-Repositorio destinado para la repetición del parcial y laboratorio dos de la materia sistemas expertos de la facultad de ingeniería de la Universidad Evangélica de El Salvador.
+# Parcial dos
+
 
 ## Rama desarrollo 1
 Desarrollo del laboratio dos de la materia de sistemas expertos. Lo que nos solicitan:
