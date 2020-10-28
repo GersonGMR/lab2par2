@@ -5,7 +5,7 @@ def analisar_archivo():
     # Iniciando tiempo de ejecucion del programa
     ejecucion = time.time()
     # Leyendo los datos del archivo proporcionado
-    leyendo_archivo = open(path+nombre_archivo,'r')
+    leyendo_archivo = open(path+nombre_archivo,'r',encoding="utf8")
     mis_datos = leyendo_archivo.read()
 
 def validar_archivo():
