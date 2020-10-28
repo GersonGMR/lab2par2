@@ -70,4 +70,3 @@ en las sesiones de trabajo de la unidad 2.
     - Salimos del programa
  - Si el usuario ingresa un numero diferente de 1 y 2 se le solicita que ingrese un numero válido entre 1 y 2.
  - Si el usuario ingresa un valor diferente de un valor entero, se le envía el mensaje "Introduce un numero entero del menu: "
-
