@@ -1,8 +1,8 @@
 # Parcial dos
 
 
-## Rama desarrollo 1
-Desarrollo del laboratio dos de la materia de sistemas expertos. Lo que nos solicitan:
+## Rama desarrollo2
+Desarrollo del parcial dos de la materia de sistemas expertos. Lo que nos solicitan:
 1. Mostrar en pantalla que el usuario tiene 2 opciones: 
 - Especificar nombre de archivo y procesar su contenido
 - Salir del programa
@@ -25,11 +25,15 @@ ambiente de consola.
 en las sesiones de trabajo de la unidad 2.
 
 ## Breve resumen del funcionamiento del codigo (flujo de datos)
-1. Se muestra al usuario un menú con dos opciones.
+1. Menu principal.
 - Ingresar el nombre del archivo
-- Salir
-2. Si el usuario ingresa el nombre del archivo pasamos a analizarlo
-3. Se realizan las operaciones para calcular la cantidad de palabras,caracteres,filas y palabras únicas contenidas en el archivo proporcionado.
-4. Se muestran los resultados de las operaciones anteriores y el tiempo de ejecución del programa.
-5. Volvemos al menú principal
-6. Si el usuario escoge la opción dos, el programa se finaliza.
+  - Si el usuario ingresa el nombre del archivo pasamos a validar que el archivo si existe.
+    - El archivo existe
+      - Se realizan las operaciones para calcular la cantidad de palabras,caracteres,filas y palabras únicas contenidas en el archivo proporcionado. 
+      - Se muestran los resultados de las operaciones anteriores y el tiempo de ejecución del programa y volvemos al menu principal
+    - El archivo no existe
+      - Se envía el mensaje al usuario " El archivo no existe " y volvemos al menu principal
+  - Salir
+    - Salimos del programa
+ - Si el usuario ingresa un numero diferente de 1 y 2 se le solicita que ingrese un numero válido entre 1 y 2.
+ - Si el usuario ingresa un valor diferente de un valor entero, se le envía el mensaje "Introduce un numero entero del menu: "
