@@ -1,7 +1,7 @@
 # Repositorio laboratorio y parcial dos SE
 Repositorio destinado para la repetición del parcial y laboratorio dos de la materia sistemas expertos de la facultad de ingeniería de la Universidad Evangélica de El Salvador.
 
-## Rama desarrollo 1
+## Rama Desarrollo1
 Desarrollo del laboratio dos de la materia de sistemas expertos. Lo que nos solicitan:
 1. Mostrar en pantalla que el usuario tiene 2 opciones: 
 - Especificar nombre de archivo y procesar su contenido
@@ -24,12 +24,13 @@ ambiente de consola.
 7. Se requiere aplicar todos los estándares de buenas prácticas de codificación desarrollados
 en las sesiones de trabajo de la unidad 2.
 
-## Breve resumen del funcionamiento del codigo (flujo de datos)
-1. Se muestra al usuario un menú con dos opciones.
-- Ingresar el nombre del archivo
-- Salir
-2. Si el usuario ingresa el nombre del archivo pasamos a analizarlo
-3. Se realizan las operaciones para calcular la cantidad de palabras,caracteres,filas y palabras únicas contenidas en el archivo proporcionado.
-4. Se muestran los resultados de las operaciones anteriores y el tiempo de ejecución del programa.
-5. Volvemos al menú principal
-6. Si el usuario escoge la opción dos, el programa se finaliza.
+## Rama Desarrollo2
+Desarrollo del parcial dos de la materia de sistemas expertos. Lo que nos solicitan:
+1. Optimizar todo el funcionamiento del programa diseñado en la rama desarrollo1.
+2. Codificar la solución utilizando estructuras de control y estructuras de datos de su elección,
+debe informarse al usuario sobre el tiempo de ejecución utilizado hasta mostrar los
+resultados. Se sugiere que su solución sea desarrollada en
+ambiente de consola.
+3. Se requiere aplicar todos los estándares de buenas prácticas de codificación desarrollados
+en las sesiones de trabajo de la unidad 2.
+
