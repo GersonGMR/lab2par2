@@ -11,6 +11,10 @@ def analisar_archivo():
     cantidad_caracteres = len(mis_datos)
     cantidad_palabras = len(mis_datos.split())
     cantidad_lineas = len(mis_datos.splitlines())
+    # Obteniendo valores unicos con set()
+    seperando_palabras = mis_datos.split()
+    palabras_unicas = set(seperando_palabras)
+    cantidad_palabras_unicas = len(palabras_unicas)
 
 def validar_archivo():
     try:
