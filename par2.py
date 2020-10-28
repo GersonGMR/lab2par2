@@ -1,6 +1,17 @@
 import time
 path = "C:/Users/GersonGM/github/lab2par2SH/"
 
+def analisar_archivo():
+
+def validar_archivo():
+    try:
+        abrir_archivo = open(path+nombre_archivo)
+        abrir_archivo.close()
+        print ('Archivo encontrado')
+        analisar_archivo()
+    except FileNotFoundError:
+        print('El archivo no existe')
+
 def validacion_menu():
     opcion_correcta = False
     num = 0
