@@ -15,6 +15,9 @@ def analisar_archivo():
     seperando_palabras = mis_datos.split()
     palabras_unicas = set(seperando_palabras)
     cantidad_palabras_unicas = len(palabras_unicas)
+    # Mostrando resultados
+    print (" Cantidad de palabras: {} \n Cantidad de caracteres: {} \n Cantidad de lineas: {} \n Cantidad de palabras unicas: {} \n".format(cantidad_palabras,cantidad_caracteres,cantidad_lineas,cantidad_palabras_unicas))
+    print('Duracion: {} segundos'.format(time.time() - ejecucion))
 
 def validar_archivo():
     try:
@@ -36,20 +39,19 @@ def validacion_menu():
             print('Error, introduce un numero entero que se encuentre en el menu')
     return num
 
-while True:
-    salir = False
-    opcion = 0
-    while not salir:
-        print ("1. Ingresar el nombre del archivo para analizarlo")
-        print ("2. Salir")
-        print ("Elige una opcion")
-        opcion = validacion_menu()
-        if opcion == 1:
-            nombre_archivo = input ("ingresa el nombre del archivo con extensión: ")
-            validar_archivo()
-        elif opcion == 2:
-            salir = True
-        else:
-            print ("Introduce un numero entre 1 y 2")
+salir = False
+opcion = 0
+while not salir:
+    print ("1. Ingresar el nombre del archivo para analizarlo")
+    print ("2. Salir")
+    print ("Elige una opcion")
+    opcion = validacion_menu()
+    if opcion == 1:
+        nombre_archivo = input ("ingresa el nombre del archivo con extensión: ")
+        validar_archivo()
+    elif opcion == 2:
+        salir = True
+    else:
+        print ("Introduce un numero entre 1 y 2")
  
-    print ("Finalizado")
+print ("Cerrando el programa")
