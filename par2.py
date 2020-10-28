@@ -7,6 +7,10 @@ def analisar_archivo():
     # Leyendo los datos del archivo proporcionado
     leyendo_archivo = open(path+nombre_archivo, 'r', encoding = "utf8")
     mis_datos = leyendo_archivo.read()
+    # Operaciones
+    cantidad_caracteres = len(mis_datos)
+    cantidad_palabras = len(mis_datos.split())
+    cantidad_lineas = len(mis_datos.splitlines())
 
 def validar_archivo():
     try:
